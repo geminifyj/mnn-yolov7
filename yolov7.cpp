@@ -24,7 +24,7 @@ int yolov7::init(string model, float threshold, float mnsth)
     netConfig.numThread = 4;
 
     session = Inter->createSession(netConfig);
-    input = Inter->getSessionInput(session, "x.1");
+    input = Inter->getSessionInput(session, nullptr);
     Inter->resizeTensor(input, {1, 3, (int)net_size, (int)net_size});
     Inter->resizeSession(session);
 
