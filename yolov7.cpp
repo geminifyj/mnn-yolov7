@@ -1,6 +1,6 @@
 #include "yolov7.h"
 
-using namespace jetflow;
+using namespace geminifyj;
 
 yolov7::yolov7()
 {
